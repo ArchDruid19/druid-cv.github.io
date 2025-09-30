@@ -98,7 +98,6 @@ footer {
 .image-with-side-text {
     display: flex;
     justify-content: center; 
-    border: 1px solid pink; 
     align-items: center;
     height: 150px;
 }
