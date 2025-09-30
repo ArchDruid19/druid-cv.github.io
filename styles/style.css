@@ -1,0 +1,192 @@
+:root {
+    --top_spacing: 0.90rem;
+    --general_spacing: 0.75rem;
+    --dp_dark_orange: #ff7e5f;
+    --dp_sand_orange: #feb47b;
+    --dp_white: #FFFFFF;
+    --dp_light_red: #C5023C;
+}
+
+body {
+    background: linear-gradient(to bottom, var(--dp_dark_orange), var(--dp_sand_orange), var(--dp_light_red) 100%);
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+h3 {
+    margin: var(--top_spacing);
+    font-size: 20px;
+}
+
+p {
+    text-align: center;
+    padding: 0.75rem;
+    /* margin-top: var(--top_spacing); */
+}
+
+nav {
+    text-align: center;
+}
+
+button {
+    background: var(--dp_dark_orange);
+    border-radius: 8px;
+    border-color: pink;
+    font-weight: 400;
+}
+
+footer {
+    margin-top: var(--top_spacing);
+    /* space between the bottom footer and the last panal on the page */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Controls details about the nav menu at the top */
+.top-menu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Container that holds all right and left panals */
+.side-by-side-container {
+    width: 100%;
+
+}
+
+.side-by-side-container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Controls details about the left and right panels like margins, widith and vertical spacing */
+.left-side,
+.right-side {
+    width: 48.5%;
+    border: 2px solid black;
+    box-sizing: border-box;
+    margin-top: var(--top_spacing);
+}
+
+.left-side {
+    float: left;
+}
+
+.right-side {
+    float: right;
+}
+
+.about-me-title {
+    text-align: center;
+}
+
+/* All text is centerted but only a couple pieces of text need to be left aligned */
+.left-text-align {
+    text-align: left;
+}
+
+/* I hate this and it doesnt work ever */
+.image-with-side-text {
+    display: flex;
+    justify-content: center; 
+    border: 1px solid pink; 
+    align-items: center;
+    height: 150px;
+}
+
+/* Main project container */
+.project-container {
+    text-align: center;
+    height: 750px;
+    border: 2px solid black;
+    margin-top: var(--top_spacing)
+}
+
+/* Controls design of the github buttons at the bottom of each project panel */
+.github-link {
+    margin-bottom: var(--top_spacing);
+    width: 75%;
+}
+
+/* Controls the color of Font Awesome icons */
+.logo {
+    color: black;
+}
+
+/* Controls details about the smaller panels inside the projects panel */
+.individual-project-container {
+    width: 35%;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0.9rem;
+    height: 85%;
+}
+
+/* Sets the size of the icons from Font Awesome */
+#phone-icon,
+#gitlab-icon,
+#github-icon,
+#linked-in-icon,
+#email-icon {
+    font-size: 64px;
+}
+
+#drumonitor-pic {
+    margin-top: var(--top_spacing);
+    width: 450px;
+}
+
+/* Controls height of and experience section */
+#education,
+#experience {
+    height: 400px;
+}
+
+/* Controls height of about-me and skills */
+#about-me,
+#skills {
+    height: 650px;
+}
+
+/* Controls details about the blogs section */
+#blogs {
+    border: 2px solid black;
+    margin-top: var(--top_spacing);
+    height: 400px;
+
+}
+
+/* Margin between screen and edge of each panels border */
+#blogs,
+.project-container,
+.left-side,
+.right-side {
+    margin-left: var(--general_spacing);
+    margin-right: var(--general_spacing);
+}
+
+/* Picture of myself in the about-me section */
+#my-picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: var(--top_spacing);
+    width: 300px;
+    border: 2px solid orange;
+}
+
+/* Image used in the education section */
+#svsu-image {
+    width: 100px;
+    margin: 0.75rem;
+}

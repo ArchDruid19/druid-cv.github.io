@@ -1,0 +1,210 @@
+<!DOCTYPE <!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Drew Vesterfelt's CV</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles/style.css">
+    <!-- Font Awesome 6.5.1 (MUST USE THIS VERSION OR HIGHER OR ELSE) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation Menu -->
+    <header>
+        <nav class="top-menu">
+            <button><a href="https://archdruid.gitlab.io/archdruids-domain/">Return Home</a></button>
+            <button><a href=#about-me>About Me</a></button>
+            <button><a href=#skills>Skills</a></button>
+            <button><a href="#experience">Experience</a></button>
+            <button><a href="#education">Education</a></button>
+            <button><a href="#projects">Projects</a></button>
+            <button><a href="#blogs">Blogs</a></button>
+            <button><a href="#bottom-menu">Contact Me!</a></button>
+        </nav>
+    </header>
+
+    <!-- About Me & Skills -->
+
+    <section class="side-by-side-container">
+        <div id="about-me" class="left-side">
+            <img src="../images/me.png" id="my-picture">
+            <h3 class="about-me-title">Brr Brr Patapim</h3>
+            <p>Developer</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+                dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
+                incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+        </div>
+
+        <div id="skills" class="right-side">
+            <h3>Skills</h3>
+            <p class="left-text-align"><strong>Attentitive:</strong></p>
+
+            <p class="left-text-align">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                doloremque laudantium, totam
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+
+            <p class="left-text-align">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                doloremque laudantium, totam
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+
+            <p class="left-text-align">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                doloremque laudantium, totam
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+
+        </div>
+    </section>
+
+    <!-- Education & Experience -->
+
+    <section class="side-by-side-container">
+        <div id="education" class="left-side">
+            <h3>Education</h3>
+
+            <div class="image-with-side-text">
+                <div>
+                    <img src="../images/icons/Saginaw_Valley_State_Cardinals_logo.svg.png" id="svsu-image">
+                </div>
+
+                <div>
+                    <p class="left-text-align"><strong>Saginaw Vally State University</strong><br>Brr Brr</p>
+                </div>
+            </div>
+
+
+            <div class="image-with-side-text">
+                <div>
+                    <img src="../images/icons/email_icon.svg">
+                </div>
+
+                <div>
+                    <p class="left-text-align"><strong>Lorem ipsum dolor sit amet</strong><br>Brr Brr</p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="experience" class="right-side">
+            <h3>Experience</h3>
+
+            <div class="image-with-side-text">
+                <div>
+                    <i class="fa-brands fa-java" style="font-size: 100px;"></i>
+                </div>
+
+                <div style="border: 1px solid pink;"> <!-- Need to vertical align middle or else this webpage explodes -->
+                    <p class="left-text-align"><strong>Java</strong></p>
+                </div>
+            </div>
+
+
+            <div class="image-with-side-text">
+                <div>
+                    <img src="../images/icons/email_icon.svg">
+                </div>
+
+                <div> <!-- Need to vertical align middle or else this webpage explodes -->
+                    <p class="left-text-align"><strong>Lorem ipsum dolor sit amet</strong><br>Brr Brr</p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+    <!-- Projects & Blogs -->
+
+    <section>
+        <div id="projects" class="project-container">
+            <h3>Projects</h3>
+
+            <!-- Individual Projects -->
+
+            <div class="individual-project-container">
+                <img src="../images/drumonitor.png" id="drumonitor-pic">
+                <h6>Drumonitor</h6>
+                <p>Drumonitor is a program for Arch Linux based systems that will read and display differant statistics
+                    about
+                    a users computer. This is mainly used in cases where you want to setup a module in a program like
+                    <a href="https://wiki.archlinux.org/title/Tint2">tint2</a> or <a
+                        href="https://github.com/polybar/polybar">polybar.</a> It is
+                    written in Rust to be as performative as possible. As of now the program is able to
+                    display CPU, RAM, and network stats and can change how fast statistics are
+                    read and displayed. To read more about this, click the link below!
+                </p>
+                <button class="github-link"><a href="https://github.com/ArchDruid19/Drumonitor">Link To
+                        GitHub</a></button>
+            </div>
+
+            <div class="individual-project-container">
+                <img src="../images/drumonitor.png" id="drumonitor-pic">
+                <h6>Other Project</h6>
+                <p>Drumonitor is a program for Arch Linux based systems that will read and display differant statistics
+                    about
+                    a users computer. This is mainly used in cases where you want to setup a module in a program like
+                    <a href="https://wiki.archlinux.org/title/Tint2">tint2</a> or <a
+                        href="https://github.com/polybar/polybar">polybar.</a> It is
+                    written in Rust to be as performative as possible. As of now the program is able to
+                    display CPU, RAM, and network stats and can change how fast statistics are
+                    read and displayed. To read more about this, click the link below!
+                </p>
+                <button class="github-link"><a href="https://github.com/ArchDruid19/Drumonitor">Link To
+                        GitHub</a></button>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div id="blogs">
+            <h3>Blogs</h3>
+            <article>
+                <h4>Brr Brr Papatim... Real or Fiction?</h4>
+
+            </article>
+        </div>
+
+    </section>
+
+
+    <!-- Footer/Contact Me -->
+
+    <footer id="bottom-menu">
+        <i class="fa fa-phone" id="phone-icon">
+            <p style="display: inline-block; vertical-align: middle;">(111)-111-1111</p>
+        </i>
+
+        <i class="fa fa-envelope" id="email-icon">
+            <p style="display: inline-block; vertical-align: middle;">drew@drew.com</p>
+        </i>
+
+        <i class="fa-brands fa-linkedin" id="linked-in-icon"></i>
+
+        <a class="logo" href="https://gitlab.com/ArchDruid"><i class="fa-brands fa-gitlab" id="gitlab-icon"></i></a>
+
+        <a class="logo" href="https://github.com/ArchDruid19"><i class="fa-brands fa-github" id="github-icon"></i></a>
+
+    </footer>
+
+</body>
+
+</html>
