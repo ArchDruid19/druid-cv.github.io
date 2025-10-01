@@ -172,7 +172,6 @@ footer {
 .left-side,
 .right-side {
     margin-left: var(--general_spacing);
-    margin-right: var(--general_spacing);
 }
 
 /* Picture of myself in the about-me section */
