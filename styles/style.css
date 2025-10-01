@@ -56,33 +56,18 @@ footer {
     justify-content: space-evenly;
 }
 
-/* Container that holds all right and left panals */
-.side-by-side-container {
+.side-by-side-flex-container {
     width: 100%;
-
+    display: flex;
+    margin-top: 0.75rem;
+    justify-content: space-evenly;
 }
 
-.side-by-side-container::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-/* Controls details about the left and right panels like margins, widith and vertical spacing */
-.left-side,
-.right-side {
-    width: 48.5%;
+.individual-flex-container {
     border: 2px solid black;
-    box-sizing: border-box;
-    margin-top: var(--top_spacing);
-}
-
-.left-side {
-    float: left;
-}
-
-.right-side {
-    float: right;
+    margin: 10px;
+    /* Sets the width of the containers so they appear even */
+    width: 49%; 
 }
 
 .about-me-title {
