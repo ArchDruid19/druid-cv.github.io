@@ -17,59 +17,89 @@ a {
 
 * {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 h3 {
     text-align: center;
 }
 
+/* Containers for the top and bottom navbar */
 .top-navbar,
 .bottom-navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+
 }
 
-.side-by-side-flex-container {
+/* Flex containers for about me and skills sections */
+.about-me-and-skills-flex-container,
+.education-flex-container {
     display: flex;
     flex-direction: row;
 }
 
-.child-flex-container {
+/* About me and skills containers; sets width to 50% to make a two pane grid panel */
+.about-me-container,
+.skills-container {
     width: 50%;
     text-align: center;
 }
 
-.side-by-side-image-with-text {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+/* Further properties needed to center the educations flex container */
+.education-flex-container {
+    justify-content: center;
+    text-align: center;
 }
 
-.stacked-side-by-side-image-with-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Container for svsu/other fake school logo with text underneath */
+.svsu-education-container,
+.university-of-placeholding-container {
+    align-content: flex-end; 
+    /* border: 1px solid black;  */
+    width: 50vw;
 }
 
-.projects-section {
-
-}
-
+/* Main flex container for putting the projects in a row */
 .projects-flex-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.individual-projects {
+/* Container for each individual project in the projects section */
+.individual-projects-container {
     text-align: center;
-    width: 30vw;
+    width: 45vw;
+    border-radius: 5px; /* Border radius for the individual projects */
+    border: 1px solid black;
 }
 
-.blogs-container {
-    
+/* Places images side by side with text using flex */
+.side-by-side-image-with-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0.75vh; /* Spacing between each item in education/experience */
+}
+
+/* Everything that needs a border */
+.blogs-container,
+.projects-container,
+.education-container,
+.about-me-container,
+.skills-container,
+.experience-container,
+.top-navbar,
+.bottom-navbar {
+    border: 2px solid black;
+    padding: 1vw;
+    /* Vertical Spacing between each panel */
+    margin-top: 1vh;
+    /* Spacing from the left/right of the window to the left/right border of each panel */
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
 /* Controls the color of the logos in the footer */
@@ -77,24 +107,20 @@ h3 {
     color: black;
 }
 
-/* Everything that needs a border */
-.blogs-container,
-.individual-projects,
-.projects-section,
-.child-flex-container,
-.top-navbar,
-.bottom-navbar {
-    border: 1px solid black;
-}
-
 #svsu-logo,
-#temp-email-icon {
-    width: 100px;
-    /* Using a percentage causes this whole website to explode */
+#temp-email-icon,
+#java-logo,
+#other-school-icon {
+    margin-right: 0.75vw; /* spacing between the logo and text in education/experience */
+    width: 300px; /* Using a percentage causes this whole website to explode */
 }
 
 #drumonitor-pic {
-    width: 200px;
+    width: 250px;
+}
+
+#my-picture {
+    width: 300px;
 }
 
 #phone-icon,
@@ -110,12 +136,20 @@ h3 {
 }
 
 @media (max-width: 800px) {
-    .side-by-side-flex-container {
+    /* Turn all flex container that use flex-direction: row to column */
+    .about-me-and-skills-flex-container,
+    .projects-flex-container,
+    .side-by-side-image-with-text,
+    .education-flex-container {
         flex-direction: column;
     }
 
-    .child-flex-container {
-        width: 100%;
+    .about-me-container,
+    .skills-container,
+    .individual-projects-container,
+    .svsu-education-container,
+    .university-of-placeholding-container {
+        width: fit-content; /* Fits the content with the margins that are already specified */
     }
 
 }
