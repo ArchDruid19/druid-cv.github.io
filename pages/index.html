@@ -1,5 +1,4 @@
-<!DOCTYPE <!DOCTYPE html>
-
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -14,9 +13,9 @@
 </head>
 
 <body>
-    <!-- Navigation Menu -->
+    <!-- Top navigation menu -->
     <header>
-        <nav class="top-menu">
+        <nav class="top-navbar">
             <button><a href="https://archdruid.gitlab.io/archdruids-domain/">Return Home</a></button>
             <button><a href=#about-me>About Me</a></button>
             <button><a href=#skills>Skills</a></button>
@@ -28,112 +27,130 @@
         </nav>
     </header>
 
+
+
     <!-- About Me & Skills -->
-    <section class="side-by-side-flex-container">
-        <div id="about-me" class="individual-flex-container">
-            <img src="../images/brrbrr.jpg" id="my-picture">
-            <h3 class="about-me-title">Brr Brr Patapim</h3>
-            <p>Developer</p>
-            <p>I am a software developer with a focus on building reliable, maintainable, and scalable applications. My
-                work blends problem-solving with clean design principles, and I’m always exploring new technologies to
-                improve efficiency and performance. This section is currently a placeholder and will be updated with
-                more specific information soon.</p>
-        </div>
+    <section id="about-me-and-skills-section">
 
-        <div id="skills" class="individual-flex-container">
-            <h3>Skills</h3>
-            <!-- Space things out vertically evenly using flex and flex-direction -->
-            <div style="display: flex; flex-direction: column; justify-content: space-between;">
-                <p class="left-text-align">Proficient in modern programming languages and frameworks with a strong focus
-                    on writing clean, maintainable code. Familiar with collaborative development environments, version
-                    control systems, and agile workflows. Comfortable working across the full stack and quickly adapting
-                    to new tools and technologies.</p>
+        <!-- About Me -->
+        <div class="side-by-side-flex-container">
+            <div class="child-flex-container" id="about-me">
+                <img src="../images/brrbrr.jpg">
+                <h3>Brr Brr Patapim</h3>
+                <p>Developer</p>
+                <p>I am a software developer with a focus on building reliable, maintainable, and scalable applications.
+                    My
+                    work blends problem-solving with clean design principles, and I’m always exploring new technologies
+                    to
+                    improve efficiency and performance. This section is currently a placeholder and will be updated with
+                    more specific information soon.</p>
+            </div>
 
-                <p class="left-text-align">Skilled in front-end and back-end web development, responsive design
-                    principles, and performance optimization. Knowledgeable in building dynamic user interfaces,
-                    consuming APIs, and deploying scalable applications. Experience with cross-browser compatibility and
-                    modern development tooling.</p>
 
-                <p class="left-text-align">Experienced in designing, building, and maintaining complex software systems.
-                    Strong understanding of data structures, algorithms, and system design. Capable of working
-                    independently or as part of a larger engineering team to deliver high-quality, production-ready
-                    code.</p>
+            <!-- Skills -->
+            <div class="child-flex-container" id="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Proficient in modern programming languages and frameworks with a strong
+                        focus
+                        on writing clean, maintainable code.</p>
 
-                <p class="left-text-align">Comfortable working across various layers of the technology stack, with an
-                    emphasis on problem-solving, adaptability, and clear communication. Familiar with modern development
-                    environments, collaborative workflows, and continuous integration practices. Always exploring new
-                    tools and techniques to stay current with evolving technologies.</p>
+                    <li>Skilled in front-end and back-end web development, responsive design
+                        principles, and performance optimization.</p>
+
+                    <li>Experienced in designing, building, and maintaining complex software
+                        systems.
+                        Strong understanding of data structures, algorithms, and system design.</p>
+
+                    <li>Comfortable working across various layers of the technology stack, with
+                        an
+                        emphasis on problem-solving, adaptability, and clear communication.</p>
+                </ul>
             </div>
         </div>
     </section>
 
     <!-- Education & Experience -->
+    <section id="education-and-experience-section">
+        <div class="side-by-side-flex-container">
+            <!-- Education -->
+            <div class="child-flex-container" id="education">
+                <div class="stacked-side-by-side-image-with-text">
+                    <h3>Education</h3>
+                    <!-- First image with text -->
+                    <div class="side-by-side-image-with-text">
+                        <div>
+                            <!-- Image -->
+                            <img id="svsu-logo" src="../images/icons/Saginaw_Valley_State_Cardinals_logo.svg.png"
+                                alt="SVSU Logo">
+                        </div>
 
-    <section class="side-by-side-flex-container">
-        <div id="education" class="individual-flex-container">
-            <h3>Education</h3>
+                        <div>
+                            <!-- Side text -->
+                            <p><strong>Saginaw Vally State University</strong></p>
+                        </div>
+                    </div>
 
-            <div class="image-with-side-text">
-                <div>
-                    <img src="../images/icons/Saginaw_Valley_State_Cardinals_logo.svg.png" id="svsu-image">
-                </div>
+                    <!-- Second image with text -->
+                    <div class="side-by-side-image-with-text">
+                        <div>
+                            <!-- Image -->
+                            <img id="temp-email-icon" src="../images/icons/email_icon.svg">
+                        </div>
 
-                <div>
-                    <p class="left-text-align"><strong>Saginaw Vally State University</strong><br>Brr Brr</p>
+                        <div>
+                            <!-- Side text -->
+                            <p><strong>Lorem ipsum dolor sit amet</strong><br>Brr Brr</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
+            <!-- Experience -->
+            <div class="child-flex-container" id="experience">
+                <div class="stacked-side-by-side-image-with-text">
+                    <h3>Experience</h3>
+                    <!-- First image with text -->
+                    <div class="side-by-side-image-with-text">
+                        <div>
+                            <!-- Image -->
+                             <i class="fa-brands fa-java" style="font-size: 100px;"></i>
+                        </div>
 
-            <div class="image-with-side-text">
-                <div>
-                    <img src="../images/icons/email_icon.svg">
-                </div>
+                        <div>
+                            <!-- Side text -->
+                            <p><strong>Java</strong></p>
+                        </div>
+                    </div>
 
-                <div>
-                    <p class="left-text-align"><strong>Lorem ipsum dolor sit amet</strong><br>Brr Brr</p>
+                    <!-- Second image with text -->
+                    <div class="side-by-side-image-with-text">
+                        <div>
+                            <!-- Image -->
+                            <img id="temp-email-icon" src="../images/icons/email_icon.svg">
+                        </div>
+
+                        <div>
+                            <!-- Side text -->
+                            <p><strong>Lorem ipsum dolor sit amet</strong><br>Brr Brr</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- Experience -->
-        <div id="experience" class="individual-flex-container">
-            <h3>Experience</h3>
-
-            <div class="image-with-side-text">
-                <div>
-                    <i class="fa-brands fa-java" style="font-size: 100px;"></i>
-                </div>
-
-                <div>
-                    <p class="left-text-align"><strong>Java</strong></p>
-                </div>
-            </div>
-
-
-            <div class="image-with-side-text">
-                <!-- Using flex for these now -->
-                <div>
-                    <img src="../images/icons/email_icon.svg">
-                </div>
-
-                <div>
-                    <p class="left-text-align"><strong>Lorem ipsum dolor sit amet</strong><br>Brr Brr</p>
-                </div>
-            </div>
-        </div>
-
-
-
     </section>
 
-    <!-- Projects & Blogs -->
 
-    <section id="projects" class="project-container">
+
+
+
+    <!-- Projects -->
+    <section class="projects-section">
         <h3>Projects</h3>
-        <!-- Individual Projects -->
-        <div class="side-by-side-flex-container">
-            <div class="individual-project-container" id="openscad-projects">
-                <img src="../images/drumonitor.png" id="drumonitor-pic">
+        <div class="projects-flex-container">
+            <!-- Drumonitor -->
+            <div class="individual-projects">
+                <img src="../images/drumonitor_image.png" id="drumonitor-pic">
                 <h6>Drumonitor</h6>
                 <p>Drumonitor is a program for Arch Linux based systems that will read and display differant
                     statistics
@@ -146,13 +163,14 @@
                     display CPU, RAM, and network stats and can change how fast statistics are
                     read and displayed. To read more about this, click the link below!
                 </p>
-                <button class="github-link"><a href="https://github.com/ArchDruid19/Drumonitor">Link To
-                        GitHub</a></button>
+                <button><a href="https://github.com/ArchDruid19/Drumonitor">Link To GitHub</a></button>
+
             </div>
 
-            <div class="individual-project-container" id="drumonitor-project">
+            <!-- Some other project -->
+            <div class="individual-projects">
                 <img src="../images/drumonitor_image.png" id="drumonitor-pic">
-                <h6>Other Project</h6>
+                <h6>Drumonitor</h6>
                 <p>Drumonitor is a program for Arch Linux based systems that will read and display differant
                     statistics
                     about
@@ -164,46 +182,58 @@
                     display CPU, RAM, and network stats and can change how fast statistics are
                     read and displayed. To read more about this, click the link below!
                 </p>
-                <button class="github-link"><a href="https://github.com/ArchDruid19/Drumonitor">Link To
-                        GitHub</a></button>
+                <button><a href="https://github.com/ArchDruid19/Drumonitor">Link To GitHub</a></button>
 
             </div>
-
         </div>
-
 
     </section>
 
-    <section>
-        <div id="blogs">
+    <!-- Blogs -->
+    <section id="blogs-section">
+        <div class="blogs-container">
             <h3>Blogs</h3>
-            <article>
-                <h4>Brr Brr Papatim... Real or Fiction?</h4>
-
-            </article>
         </div>
 
     </section>
 
+    <!-- Bottom navbar/footer -->
+    <footer>
+        <nav class="bottom-navbar">
+            <!-- Telephone next to phone number -->
+            <div class="side-by-side-image-with-text">
+                <div>
+                    <i class="fa fa-phone logo" id="phone-icon"></i>
+                </div>
 
-    <!-- Footer/Contact Me -->
+                <div>
+                    <p>(111)-111-1111</p>
+                </div>
+            </div>
 
-    <footer id="bottom-menu">
-        <i class="fa fa-phone logo" id="phone-icon">
-            <p style="display: inline-block; vertical-align: middle;">(111)-111-1111</p>
-        </i>
+            <!-- Email icon next to email -->
+            <div class="side-by-side-image-with-text">
+                <div>
+                    <i class="fa fa-envelope logo" id="email-icon"></i>
+                </div>
 
-        <i class="fa fa-envelope logo" id="email-icon">
-            <p style="display: inline-block; vertical-align: middle;">drew@drew.com</p>
-        </i>
+                <div>
+                    <p>drew@drew.com</p>
+                </div>
+            </div>
 
-        <i class="fa-brands fa-linkedin logo" id="linked-in-icon"></i>
 
-        <a href="https://gitlab.com/ArchDruid"><i class="fa-brands fa-gitlab logo" id="gitlab-icon"></i></a>
+            <i class="fa-brands fa-linkedin logo" id="linked-in-icon"></i>
 
-        <a href="https://github.com/ArchDruid19"><i class="fa-brands fa-github logo" id="github-icon"></i></a>
+            <a href="https://gitlab.com/ArchDruid"><i class="fa-brands fa-gitlab logo" id="gitlab-icon"></i></a>
 
+            <a href="https://github.com/ArchDruid19"><i class="fa-brands fa-github logo" id="github-icon"></i></a>
+
+        </nav>
     </footer>
+
+
+
 
 </body>
 
