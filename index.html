@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Drew Vesterfelt's CV</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Font Awesome 6.5.1 (MUST USE THIS VERSION OR HIGHER OR ELSE CLASS NAMES WILL BE VERY OUT OF DATE) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Top navigation menu -->
+    <header>
+        <nav class="top-navbar">
+            <button class="navbutton"><a href="https://archdruid.gitlab.io/archdruids-domain/">Return Home</a></button>
+            <button class="navbutton"><a href=#about-me>About Me</a></button>
+            <button class="navbutton"><a href=#skills>Skills</a></button>
+            <button class="navbutton"><a href="#experience">Experience</a></button>
+            <button class="navbutton"><a href="#education">Education</a></button>
+            <button class="navbutton"><a href="#projects">Projects</a></button>
+            <button class="navbutton"><a href="#blogs">Blogs</a></button>
+            <button class="navbutton"><a href="#bottom-menu">Contact Me!</a></button>
+        </nav>
+    </header>
+
+
+
+    <!-- About Me & Skills -->
+    <section>
+        <main>
+            <!-- About Me -->
+            <div class="about-me-and-skills-flex-container">
+                <div class="about-me-container" id="about-me">
+                    <img src="images/brrbrr.jpg" id="my-picture">
+                    <h3>Brr Brr Patapim</h3>
+                    <p>Developer</p>
+                    <p>I am a software developer with a focus on building reliable, maintainable, and scalable
+                        applications. My work blends problem-solving with clean design principles, and I’m always
+                        exploring new technologies to improve efficiency and performance.</p>
+                </div>
+
+
+                <!-- Skills -->
+                <div class="skills-container" id="skills">
+                    <h3>Skills</h3>
+                    <hr>
+                    <ul>
+                        <li>Proficient in modern programming languages and frameworks with a strong focus on writing
+                            clean, maintainable code.</p>
+
+                        <li>Skilled in front-end and back-end web development, responsive design principles, and
+                            performance optimization.</p>
+
+                        <li>Experienced in designing, building, and maintaining complex software systems. Strong
+                            understanding of data structures, algorithms, and system design.</p>
+
+                        <li>Comfortable working across various layers of the technology stack, with an emphasis on
+                            problem-solving, adaptability, and clear communication.</p>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <!-- Education & Experience -->
+    <section>
+        <div class="education-and-experience-flex-container">
+
+            <!-- Education -->
+            <div class="education-container">
+                <h3>Education</h3>
+                <hr>
+                <div class="stacked-education-container">
+                    <!-- SVSU Logo and text -->
+                    <div class="side-by-side-image-with-text">
+                        <div>
+                            <img src="images/icons/Saginaw_Valley_State_Cardinals_logo.svg.png" id="svsu-logo">
+                        </div>
+                        <div>
+                            <p><strong>Saginaw Vally State University</strong></p>
+                            <p class="smaller-text">Computer Science</p>
+                        </div>
+                    </div>
+
+                    <!-- Other School & Text -->
+                    <div class="side-by-side-image-with-text">
+                        <div>
+                            <img src="images/icons/other_school.svg" id="other-school-icon">
+                        </div>
+
+                        <div>
+                            <p><strong>University of Placeholder</strong></p>
+                            <p class="smaller-text">Placeholding</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                
+                <a href="pages/education.html"><button class="internal-buttons" id="read-more-education">Read More!</button></a>
+
+            </div>
+
+            <!-- Experience -->
+            <div class="experience-container">
+                <h3>Experience</h3>
+                <hr>
+                <div class="stacked-experience-container">
+                    <!-- SVSU Logo and text -->
+                    <div class="side-by-side-image-with-text">
+                        <div>
+                            <img src="images/icons/java-icon.svg" id="java-logo">
+                        </div>
+
+                        <div>
+                            <p><strong>Java</strong></p>
+                            <p class="smaller-text">4 years of experience developing Java Applications</p>
+                        </div>
+                    </div>
+
+                    <div class="side-by-side-image-with-text">
+                        <div>
+                            <img src="images/icons/python-logo-only.png" id="python-icon">
+                        </div>
+
+                        <div>
+                            <p><strong>Python</strong></p>
+                            <p class="smaller-text">2 Years of Python Experience developing AI tools</p>
+                        </div>
+                        
+                        
+                    </div>
+
+                </div>
+                <a href="pages/experience.html"><button class="internal-buttons">Read More!</button></a>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+    <!-- Projects -->
+    <section class=" projects-container">
+        <h3>Projects</h3>
+        <hr>
+        <div class="projects-flex-container">
+            <!-- Drumonitor -->
+            <div class="individual-projects-container">
+                <img src="images/drumonitor_image.png" id="drumonitor-pic">
+                <h6>Drumonitor</h6>
+                <p>Drumonitor is a program for Arch Linux based systems that will read and display differant statistics
+                    about a users computer. This is mainly used in cases where you want to setup a module in a program
+                    like <a href="https://wiki.archlinux.org/title/Tint2">tint2</a> or <a
+                        href="https://github.com/polybar/polybar">polybar.</a> It is written in Rust to be as
+                    performative as possible. As of now the program is able to display CPU, RAM, and network stats and
+                    can change how fast statistics are read and displayed. To read more about this, click the link
+                    below!</p>
+                <button class="internal-buttons"><a href="https://github.com/ArchDruid19/Drumonitor">Link To GitHub</a></button>
+
+            </div>
+
+            <!-- Some other project -->
+            <div class="individual-projects-container">
+                <img src="images/arch_druids_domain_logo.png" id="arch-druids-domain-pic">
+                <h6>Arch Druid' Domain</h6>
+                <p>Arch Druid's Domain is a GitLab hosted website that features things I find iteresting or want to share. </p>
+                <button class="internal-buttons"><a href="https://github.com/ArchDruid19/Drumonitor">Link To GitHub</a></button>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Blogs -->
+    <section>
+        <div class="blogs-container">
+            <h3>Blogs</h3>
+            <hr>
+            <article>
+
+            </article>
+        </div>
+
+    </section>
+
+    <!-- Bottom navbar/footer -->
+    <footer>
+        <nav class="bottom-navbar">
+            <!-- Telephone next to phone number -->
+            <div class="side-by-side-image-with-text">
+                <div>
+                    <i class="fa fa-phone logo" id="phone-icon"></i>
+                </div>
+
+                <div>
+                    <p>(111)-111-1111</p>
+                </div>
+            </div>
+
+            <!-- Email icon next to email -->
+            <div class="side-by-side-image-with-text">
+                <div>
+                    <i class="fa fa-envelope logo" id="email-icon"></i>
+                </div>
+
+                <div>
+                    <p>drew@drew.com</p>
+                </div>
+            </div>
+
+
+            <a href="https://www.linkedin.com/in/drew-vesterfelt-391152349"><i class="fa-brands fa-linkedin logo" id="linked-in-icon"></i></a>
+
+            <a href="https://gitlab.com/ArchDruid"><i class="fa-brands fa-gitlab logo" id="gitlab-icon"></i></a>
+
+            <a href="https://github.com/ArchDruid19"><i class="fa-brands fa-github logo" id="github-icon"></i></a>
+
+        </nav>
+    </footer>
+
+
+
+
+</body>
+
+</html>

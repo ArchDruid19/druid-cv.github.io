@@ -17,11 +17,35 @@ a {
 
 * {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 h3 {
     text-align: center;
+}
+
+/* Spaces out the list items in the skills section so they look better next to the about me section */
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 90%;
+}
+
+.navbutton {
+    background-color: green;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.internal-buttons {
+    margin-top: 0.5vh;
+    margin-bottom: 1vh;
+    width: 75%;
+}
+
+.smaller-text {
+    font-size: 16px;
 }
 
 /* Containers for the top and bottom navbar */
@@ -35,30 +59,29 @@ h3 {
 
 /* Flex containers for about me and skills sections */
 .about-me-and-skills-flex-container,
-.education-flex-container {
+.education-and-experience-flex-container {
     display: flex;
     flex-direction: row;
 }
 
 /* About me and skills containers; sets width to 50% to make a two pane grid panel */
 .about-me-container,
-.skills-container {
+.skills-container,
+.education-container,
+.experience-container {
     width: 50%;
     text-align: center;
 }
 
-/* Further properties needed to center the educations flex container */
-.education-flex-container {
-    justify-content: center;
-    text-align: center;
+.education-container,
+.experience-container {
+    align-content: flex-start;
 }
 
-/* Container for svsu/other fake school logo with text underneath */
-.svsu-education-container,
-.university-of-placeholding-container {
-    align-content: flex-end; 
-    /* border: 1px solid black;  */
-    width: 50vw;
+.stacked-education-container,
+.stacked-experience-container {
+    display: flex;
+    flex-direction: column;
 }
 
 /* Main flex container for putting the projects in a row */
@@ -81,6 +104,7 @@ h3 {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     margin-top: 0.75vh; /* Spacing between each item in education/experience */
 }
 
@@ -110,12 +134,21 @@ h3 {
 #svsu-logo,
 #temp-email-icon,
 #java-logo,
+#python-icon,
 #other-school-icon {
-    margin-right: 0.75vw; /* spacing between the logo and text in education/experience */
-    width: 300px; /* Using a percentage causes this whole website to explode */
+    margin-right: 3vw; /* spacing between the logo and text in education/experience */
+    width: 150px; /* Using a percentage causes this whole website to explode */
 }
 
-#drumonitor-pic {
+/* Override above settings because the image is still too large */
+#java-logo,
+#python-icon {
+    margin-top: 1.5vh;
+    width: 125px;
+}
+
+#drumonitor-pic,
+#arch-druids-domain-pic {
     width: 250px;
 }
 
@@ -135,20 +168,23 @@ h3 {
     text-align: left;
 }
 
+#read-more-education {
+    margin-top: 2.5vh;
+}
+
 @media (max-width: 800px) {
     /* Turn all flex container that use flex-direction: row to column */
     .about-me-and-skills-flex-container,
     .projects-flex-container,
-    .side-by-side-image-with-text,
-    .education-flex-container {
+    .side-by-side-image-with-text {
         flex-direction: column;
     }
 
     .about-me-container,
     .skills-container,
     .individual-projects-container,
-    .svsu-education-container,
-    .university-of-placeholding-container {
+    .education-container,
+    .experience-container {
         width: fit-content; /* Fits the content with the margins that are already specified */
     }
 
