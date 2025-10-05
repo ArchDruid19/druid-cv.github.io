@@ -16,14 +16,14 @@
     <!-- Top navigation menu -->
     <header>
         <nav class="top-navbar">
-            <button class="navbutton"><a href="https://archdruid.gitlab.io/archdruids-domain/">Return Home</a></button>
-            <button class="navbutton"><a href=#about-me>About Me</a></button>
-            <button class="navbutton"><a href=#skills>Skills</a></button>
-            <button class="navbutton"><a href="#experience">Experience</a></button>
-            <button class="navbutton"><a href="#education">Education</a></button>
-            <button class="navbutton"><a href="#projects">Projects</a></button>
-            <button class="navbutton"><a href="#blogs">Blogs</a></button>
-            <button class="navbutton"><a href="#bottom-menu">Contact Me!</a></button>
+            <a class="navbutton" href="https://archdruid.gitlab.io/archdruids-domain/">Return Home</a>
+            <a class="navbutton" href=#about-me>About Me</a>
+            <a class="navbutton" href=#skills>Skills</a>
+            <a class="navbutton" href="#experience">Experience</a>
+            <a class="navbutton" href="#education">Education</a>
+            <a class="navbutton" href="#projects">Projects</a>
+            <a class="navbutton" href="#blogs">Blogs</a>
+            <a class="navbutton" href="#contact-me">Contact Me!</a>
         </nav>
     </header>
 
@@ -31,7 +31,7 @@
 
     <!-- About Me & Skills -->
     <section>
-        <main>
+        <main id="about-me">
             <!-- About Me -->
             <div class="about-me-and-skills-flex-container">
                 <div class="about-me-container" id="about-me">
@@ -42,6 +42,7 @@
                         applications. My work blends problem-solving with clean design principles, and I’m always
                         exploring new technologies to improve efficiency and performance.</p>
                 </div>
+
 
 
                 <!-- Skills -->
@@ -66,14 +67,18 @@
         </main>
     </section>
 
+
+
     <!-- Education & Experience -->
     <section>
-        <div class="education-and-experience-flex-container">
-
+        <div class="education-and-experience-flex-container" id="education">
             <!-- Education -->
             <div class="education-container">
-                <h3>Education</h3>
-                <hr>
+                <div class="education-title-container">
+                    <h3>Education</h3>
+                    <hr>
+                </div>
+
                 <div class="stacked-education-container">
                     <!-- SVSU Logo and text -->
                     <div class="side-by-side-image-with-text">
@@ -86,6 +91,8 @@
                         </div>
                     </div>
 
+
+
                     <!-- Other School & Text -->
                     <div class="side-by-side-image-with-text">
                         <div>
@@ -96,19 +103,17 @@
                             <p><strong>University of Placeholder</strong></p>
                             <p class="smaller-text">Placeholding</p>
                         </div>
-
                     </div>
-
                 </div>
-                
-                <a href="pages/education.html"><button class="internal-buttons" id="read-more-education">Read More!</button></a>
-
+                <a class="internal-buttons" href="pages/education.html" id="read-more-education">Read More!</a>
             </div>
 
             <!-- Experience -->
-            <div class="experience-container">
-                <h3>Experience</h3>
-                <hr>
+            <div class="experience-container" id="experience">
+                <div class="experience-title-container">
+                    <h3>Experience</h3>
+                    <hr>
+                </div>
                 <div class="stacked-experience-container">
                     <!-- SVSU Logo and text -->
                     <div class="side-by-side-image-with-text">
@@ -121,7 +126,6 @@
                             <p class="smaller-text">4 years of experience developing Java Applications</p>
                         </div>
                     </div>
-
                     <div class="side-by-side-image-with-text">
                         <div>
                             <img src="images/icons/python-logo-only.png" id="python-icon">
@@ -131,78 +135,111 @@
                             <p><strong>Python</strong></p>
                             <p class="smaller-text">2 Years of Python Experience developing AI tools</p>
                         </div>
-                        
-                        
                     </div>
-
                 </div>
-                <a href="pages/experience.html"><button class="internal-buttons">Read More!</button></a>
-
+                <a class="internal-buttons" href="pages/experience.html">Read More!</a>
             </div>
-
-
         </div>
-
-
     </section>
 
 
 
-
-
     <!-- Projects -->
-    <section class=" projects-container">
+    <section class="projects-container" id="projects">
         <h3>Projects</h3>
         <hr>
         <div class="projects-flex-container">
             <!-- Drumonitor -->
             <div class="individual-projects-container">
-                <img src="images/drumonitor_image.png" id="drumonitor-pic">
-                <h6>Drumonitor</h6>
-                <p>Drumonitor is a program for Arch Linux based systems that will read and display differant statistics
-                    about a users computer. This is mainly used in cases where you want to setup a module in a program
-                    like <a href="https://wiki.archlinux.org/title/Tint2">tint2</a> or <a
-                        href="https://github.com/polybar/polybar">polybar.</a> It is written in Rust to be as
-                    performative as possible. As of now the program is able to display CPU, RAM, and network stats and
-                    can change how fast statistics are read and displayed. To read more about this, click the link
-                    below!</p>
-                <button class="internal-buttons"><a href="https://github.com/ArchDruid19/Drumonitor">Link To GitHub</a></button>
-
+                <div>
+                    <img src="images/drumonitor_image.png" id="drumonitor-pic">
+                    <h6>Drumonitor</h6>
+                    <p>Drumonitor is a program for Arch Linux based systems that will read and display differant
+                        statistics
+                        about a users computer. This is mainly used in cases where you want to setup a module in a
+                        program
+                        like <a href="https://wiki.archlinux.org/title/Tint2">tint2</a> or <a
+                            href="https://github.com/polybar/polybar">polybar.</a> It is written in Rust to be as
+                        performative as possible. As of now the program is able to display CPU, RAM, and network stats
+                        and
+                        can change how fast statistics are read and displayed. To read more about this, click the link
+                        below!</p>
+                    <a class="internal-buttons" href="https://github.com/ArchDruid19/Drumonitor">Link To
+                        GitHub</a>
+                </div>
             </div>
+
+
 
             <!-- Some other project -->
             <div class="individual-projects-container">
-                <img src="images/arch_druids_domain_logo.png" id="arch-druids-domain-pic">
-                <h6>Arch Druid' Domain</h6>
-                <p>Arch Druid's Domain is a GitLab hosted website that features things I find iteresting or want to share. </p>
-                <button class="internal-buttons"><a href="https://github.com/ArchDruid19/Drumonitor">Link To GitHub</a></button>
-
+                <div>
+                    <img src="images/arch_druids_domain_logo.png" id="arch-druids-domain-pic">
+                    <h6>Arch Druid' Domain</h6>
+                    <p>Arch Druid's Domain is a GitLab hosted website that features things I find iteresting or want to
+                        share. Intitally created in 2024, it served as a starting point for my journey into learning web
+                        development.</p>
+                    <a class="internal-buttons" href="https://archdruid.gitlab.io/archdruids-domain/">Link To
+                        GitHub</a>
+                </div>
             </div>
         </div>
-
     </section>
 
+
+
     <!-- Blogs -->
-    <section>
-        <div class="blogs-container">
-            <h3>Blogs</h3>
-            <hr>
-            <article>
+    <section class="blogs-container" id="blogs">
+        <h3>Blogs</h3>
+        <hr>
+        <div class="blogs-flex-container">
+            <article class="individual-blogs-container">
+                <div>
+                    <h3>Placeholder Article Title</h3>
+                    <p>In today’s world, information moves faster than ever before. Readers expect clarity, depth, and
+                        precision, while writers face the challenge of delivering content that is both engaging and
+                        accessible. The purpose of this placeholder article is not to provide a definitive argument but
+                        to stand in as a model of structure, tone, and flow for a future, more complete draft.</p>
+                    <a class="internal-buttons" href="">Read More!</a>
+                </div>
+            </article>
+
+            <article class="individual-blogs-container">
+                <div>
+                    <h3>Patapim; Real or Fiction?</h3>
+                    <p>This article is not yet complete, but it exists to demonstrate structure and flow. Acting as a
+                        placeholder, it mirrors the rhythm and tone of a finished piece, giving readers a sense of how
+                        the final version may unfold. In its current form, it’s less about content and more about
+                        scaffolding.</p>
+                    <a class="internal-buttons" href="">Read More!</a>
+                </div>
+
+            </article>
+
+            <article class="individual-blogs-container">
+                <div>
+                    <h3>Development of Modern Computer <br>Algorithms During the Cold War</h3>
+                    <p>Think of this as a stand-in, a rehearsal for the real article to come. While the details aren’t
+                        filled in yet, the words you see here create space for ideas that will be developed later. For
+                        now, the purpose is simple: to hold a place and give shape to what’s on the horizon.</p>
+                    <a class="internal-buttons" href="pages/blogs.html#placeholder-article">Read
+                        More!</a>
+                </div>
 
             </article>
         </div>
-
     </section>
 
+
+
     <!-- Bottom navbar/footer -->
-    <footer>
+    <footer id="contact-me">
         <nav class="bottom-navbar">
             <!-- Telephone next to phone number -->
             <div class="side-by-side-image-with-text">
                 <div>
                     <i class="fa fa-phone logo" id="phone-icon"></i>
                 </div>
-
                 <div>
                     <p>(111)-111-1111</p>
                 </div>
@@ -213,25 +250,18 @@
                 <div>
                     <i class="fa fa-envelope logo" id="email-icon"></i>
                 </div>
-
                 <div>
                     <p>drew@drew.com</p>
                 </div>
             </div>
-
-
-            <a href="https://www.linkedin.com/in/drew-vesterfelt-391152349"><i class="fa-brands fa-linkedin logo" id="linked-in-icon"></i></a>
+            <a href="https://www.linkedin.com/in/drew-vesterfelt-391152349"><i class="fa-brands fa-linkedin logo"
+                    id="linked-in-icon"></i></a>
 
             <a href="https://gitlab.com/ArchDruid"><i class="fa-brands fa-gitlab logo" id="gitlab-icon"></i></a>
 
             <a href="https://github.com/ArchDruid19"><i class="fa-brands fa-github logo" id="github-icon"></i></a>
-
         </nav>
     </footer>
-
-
-
-
 </body>
 
 </html>

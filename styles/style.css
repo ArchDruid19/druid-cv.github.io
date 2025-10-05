@@ -1,25 +1,34 @@
 :root {
-    --earth_l_green: #cad2c5;
-    --earth_m_green: #84a98c;
-    --earth_d_green: #52796f;
-    --earth_vd_green: #354f52;
+    --cream: #f8eedf;
+    --wheat: #f5deb3;
+    --border-gray: #3b2f2f;
+    --light-orange: #e7a86a;
+    --dark-orange: #e29a5c;
+    --darker-orange: #db8d4f;
+    --darkest-orange: #cf7f45;
 }
 
+/* Linear gradient that goes from light to dark orange from the top left to bottom right */
 body {
-    /* background: linear-gradient(to bottom, var(--dp_dark_orange), var(--dp_sand_orange), var(--dp_light_red) 100%); */
-    background: linear-gradient(to bottom, var(--earth_l_green), var(--earth_m_green) 60%, var(--earth_d_green), var(--earth_vd_green));
+    background: linear-gradient(to bottom right,
+            var(--light-orange) 0%,
+            var(--dark-orange) 20%,
+            var(--darker-orange) 80%,
+            var(--darkest-orange) 90%);
+
 }
 
 a {
     text-decoration: none;
-    color: blue;
 }
 
+/* Font for all elements on the webpage */
 * {
     font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
 }
 
+/* All panel titles must be center aligned */
 h3 {
     text-align: center;
 }
@@ -28,27 +37,37 @@ h3 {
 ul {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 90%;
+    justify-content: space-between;
+    height: 80%;
 }
 
-.navbutton {
-    background-color: green;
-    border-radius: 10px;
-    padding: 10px;
-}
-
+/* psudo buttons in the navbar */
+.navbutton,
 .internal-buttons {
-    margin-top: 0.5vh;
-    margin-bottom: 1vh;
+    border: 1px solid var(--border-gray);
+    border-radius: 10px;
+    padding: 5px;
+    color: black;
+    background-color: var(--wheat);
+}
+
+/* change colors when hovering */
+.navbutton:hover,
+.internal-buttons:hover {
+    background-color: var(--cream);
+}
+
+/* Make the internal buttons have a longer width */
+.internal-buttons {
     width: 75%;
 }
 
+/* For fonts in the education/experience section */
 .smaller-text {
     font-size: 16px;
 }
 
-/* Containers for the top and bottom navbar */
+/* Containers for the top and bottom navbar; space them evenly using flex */
 .top-navbar,
 .bottom-navbar {
     display: flex;
@@ -64,7 +83,13 @@ ul {
     flex-direction: row;
 }
 
-/* About me and skills containers; sets width to 50% to make a two pane grid panel */
+/* Stretch content to fill the entire panel */
+.education-and-experience-flex-container {
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+/* About me, skills, education and experience containers; sets width to 50% to make a two pane grid panel */
 .about-me-container,
 .skills-container,
 .education-container,
@@ -73,30 +98,93 @@ ul {
     text-align: center;
 }
 
+/* makes sure the content in both containers align */
 .education-container,
 .experience-container {
-    align-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
+/* For the icons and text in the education/experience section */
 .stacked-education-container,
 .stacked-experience-container {
     display: flex;
     flex-direction: column;
 }
 
+/* Makes the hr lines show up by splitting them and the titles into a seperate div */
+.education-title-container,
+.experience-title-container {
+    width: 100%;
+}
+
 /* Main flex container for putting the projects in a row */
 .projects-flex-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: stretch;
+
 }
 
-/* Container for each individual project in the projects section */
+/* Container for each individual project in the projects section; make the direction cloumn  */
 .individual-projects-container {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     width: 45vw;
-    border-radius: 5px; /* Border radius for the individual projects */
-    border: 1px solid black;
+    border-radius: 5px;
+    /* Border radius for the individual projects */
+    border: 1px solid var(--border-gray);
+    padding: 10px;
+    justify-content: space-between;
+}
+
+/* Makes the individual projects child elements align evenly */
+.individual-projects-container>div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+
+/* Essentially makes p occupy the same height in both containers to make content align evenly */
+.individual-projects-container p {
+    flex-grow: 1;
+}
+
+/* Flex container that contains the row of blogs */
+.blogs-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+/* Container for each individual blog post, using column flex to distribute items vertically */
+.individual-blogs-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+    justify-content: space-between;
+    border: 1px solid var(--border-gray);
+}
+
+/* All children of blogs-flex-containers that are divs will display columns*/
+.individual-blogs-container>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+/* Evenly vertically space out the items in the div so the buttons all appear at the same height */
+.individual-blogs-container p {
+    flex-grow: 1;
 }
 
 /* Places images side by side with text using flex */
@@ -105,7 +193,8 @@ ul {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 0.75vh; /* Spacing between each item in education/experience */
+    margin-top: 0.75vh;
+    /* Spacing between each item in education/experience */
 }
 
 /* Everything that needs a border */
@@ -117,7 +206,7 @@ ul {
 .experience-container,
 .top-navbar,
 .bottom-navbar {
-    border: 2px solid black;
+    border: 2px solid var(--border-gray);
     padding: 1vw;
     /* Vertical Spacing between each panel */
     margin-top: 1vh;
@@ -136,8 +225,11 @@ ul {
 #java-logo,
 #python-icon,
 #other-school-icon {
-    margin-right: 3vw; /* spacing between the logo and text in education/experience */
-    width: 150px; /* Using a percentage causes this whole website to explode */
+    margin-right: 3vw;
+    /* spacing between the logo and text in education/experience */
+    width: 150px;
+    /* Using a percentage causes this whole website to explode */
+    margin-bottom: 15px;
 }
 
 /* Override above settings because the image is still too large */
@@ -154,6 +246,7 @@ ul {
 
 #my-picture {
     width: 300px;
+    border: 1px solid var(--border-gray);
 }
 
 #phone-icon,
@@ -168,24 +261,29 @@ ul {
     text-align: left;
 }
 
-#read-more-education {
-    margin-top: 2.5vh;
-}
-
 @media (max-width: 800px) {
-    /* Turn all flex container that use flex-direction: row to column */
+
+    /* Turn all flex container that use flex-direction: row to column to account for mobile users */
     .about-me-and-skills-flex-container,
     .projects-flex-container,
-    .side-by-side-image-with-text {
+    .side-by-side-image-with-text,
+    .blogs-flex-container {
         flex-direction: column;
+    }
+
+    .blogs-flex-container {
+        justify-content: center;
     }
 
     .about-me-container,
     .skills-container,
     .individual-projects-container,
     .education-container,
-    .experience-container {
-        width: fit-content; /* Fits the content with the margins that are already specified */
+    .experience-container,
+    .individual-blogs-container {
+        width: fit-content;
+        /* Fits the content with the margins that are already specified */
     }
+
 
 }
