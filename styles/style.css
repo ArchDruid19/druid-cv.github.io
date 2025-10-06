@@ -40,18 +40,33 @@ li {
     padding-bottom: 10%;
 }
 
+/* Font colors for entire page */
+p, 
+h3,
+li,
+strong {
+    color: var(--border-gray);
+}
+
 hr {
     border: none;
-    height: 3px;
-    background-color: var(--accent-orange);
+    height: 1px;
+    background-color: var(--border-gray);
+    margin-bottom: 40px;
 }
+
+.individual-blogs-container,
+.individual-projects-container {
+    border-radius: 10px;
+    border: 1px solid var(--border-gray);
+}
+
 
 /* psudo buttons in the navbar */
 .navbutton,
 .internal-buttons {
-    /* border: 1px solid var(--border-gray); */
     border-radius: 10px;
-    border: 2px solid var(--accent-orange);
+    border: 1px solid var(--accent-orange);
     padding: 5px;
     color: black;
     background-color: var(--wheat);
@@ -142,10 +157,11 @@ hr {
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    width: 45%;
+    width: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
     border-radius: 5px;
     /* Border radius for the individual projects */
-    border: 2px solid var(--accent-orange);
     padding: 10px;
 }
 
@@ -177,7 +193,6 @@ hr {
     width: 30%;
     padding: 10px;
     justify-content: space-between;
-    border: 2px solid var(--accent-orange);
 }
 
 /* All children of blogs-flex-containers that are divs will display columns*/
@@ -215,7 +230,7 @@ hr {
 .experience-container,
 .top-navbar,
 .bottom-navbar {
-    border: 2px solid var(--light-orange);
+    border: 1px solid var(--accent-orange);
     padding: 1vw;
     /* Spacing from the left/right of the window to the left/right border of each panel */
     margin-left: 1.5vw;
@@ -225,7 +240,7 @@ hr {
 
 /* Controls the color of the logos in the footer */
 .logo {
-    color: black;
+    color: var(--border-gray);
     padding: 10px;
 }
 
