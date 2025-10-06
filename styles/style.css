@@ -51,6 +51,11 @@ hr {
     background-color: var(--wheat);
 }
 
+.navbutton {
+    width: 10%;
+    text-align: center;
+}
+
 .spaced-out-container * {
     padding-top: 10px;
 }
@@ -65,6 +70,7 @@ hr {
 .internal-buttons {
     display: inline-block;
     width: 75%;
+    margin-bottom: 10px;
 }
 
 /* For fonts in the education/experience section */
@@ -135,6 +141,7 @@ hr {
     /* Border radius for the individual projects */
     border: 1px solid var(--border-gray);
     padding: 10px;
+    margin-top: 15px;
 }
 
 /* Makes the individual projects child elements align evenly */
@@ -219,9 +226,9 @@ hr {
     padding: 10px;
 }
 
-#svsu-logo,
+#svsu-icon,
 #temp-email-icon,
-#java-logo,
+#java-icon,
 #python-icon,
 #other-school-icon {
     margin-right: 3vw;
@@ -232,14 +239,14 @@ hr {
 }
 
 /* Override above settings because the image is still too large */
-#java-logo,
+#java-icon,
 #python-icon {
     margin-top: 1.5vh;
     width: 125px;
 }
 
-#drumonitor-pic,
-#arch-druids-domain-pic {
+#drumonitor-icon,
+#arch-druids-domain-icon {
     width: 250px;
 }
 
@@ -263,6 +270,10 @@ hr {
 
 @media (max-width: 800px) {
 
+    header {
+        display: none;
+    }
+
     /* Turn all flex container that use flex-direction: row to column to account for mobile users */
     .about-me-and-skills-flex-container,
     .projects-flex-container,
@@ -273,6 +284,11 @@ hr {
 
     .blogs-flex-container {
         justify-content: center;
+    }
+
+    /* Margin the top of each blog when they turn to columns */
+    .individual-blogs-container {
+        margin-top: 10px;
     }
 
     .about-me-container,
