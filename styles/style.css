@@ -125,7 +125,7 @@ hr {
     text-align: center;
 }
 
-/* makes sure the content in both containers align */
+/* makes sure the content in both containers are centered */
 .education-container,
 .experience-container {
     align-items: center;
@@ -151,7 +151,7 @@ hr {
 
 }
 
-/* Container for each individual project in the projects section; make the direction cloumn  */
+/* Container for each individual project in the projects section */
 .individual-projects-container {
     display: flex;
     flex-direction: column;
@@ -166,7 +166,8 @@ hr {
     padding: 10px;
 }
 
-/* Makes the individual projects child elements align evenly */
+/* Makes the individual projects child elements align evenly by setting height to fill the entire container and then using flex-grow on 
+   paragraphs */
 .individual-projects-container>div {
     display: flex;
     flex-direction: column;
@@ -239,6 +240,7 @@ hr {
     margin-right: 1.5vw;
     /* Color of each panel */
     background-color: var(--light-orange);
+    /* Border radius round each panel to give a more 'modern' look */
     border-radius: 15px;
 }
 
